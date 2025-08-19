@@ -32,7 +32,7 @@ func main() {
 	fmt.Println("Generated Token:", tokenString)
 
 	// Chuẩn bị lệnh curl
-	url := "http://localhost:8080/protected"
+	url := "http://localhost:8080/users/123"
 	cmd := exec.Command("curl", "-H", "Authorization: Bearer "+tokenString, url)
 
 	// Lấy output từ curl
